@@ -2,45 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Extensions Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extensions from Saksham Singla</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to Google Fonts for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f5f6fa; }
+        .tabs {
+            display: flex;
+            background: #282c34;
+            padding: 0;
+            margin: 0;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 1em;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            background: #282c34;
+            border-bottom: 3px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .tab.active, .tab:hover {
+            border-bottom: 3px solid #61dafb;
+            background: #23272f;
+        }
+        .container {
+            padding: 2em;
+            max-width: 640px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px #0001;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Extensions from Saksham Singla</h1>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section id="ai-shortcuts" class="extension-card">
-                <!-- Make sure 'assets/icon.png' is the correct path to your extension's icon -->
-                <img src="assets/icon.png" alt="AI Keyboard Shortcuts Icon" class="extension-icon">
-                <h2>AI Keyboard Shortcuts</h2>
-                <p>Unlock the power of AI to find any keyboard shortcut instantly.</p>
-                <a href="ai-shortcuts.html" class="learn-more-button">Learn More</a>
-            </section>
-
-            <!-- You can add more extension cards here in the future -->
-            <!--
-            <section id="another-extension" class="extension-card">
-                <img src="assets/another-icon.png" alt="Another Extension Icon" class="extension-icon">
-                <h2>Another Extension</h2>
-                <p>Description of your next amazing extension.</p>
-                <a href="another-extension.html" class="learn-more-button">Learn More</a>
-            </section>
-            -->
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Saksham Singla. All rights reserved.</p>
-        </div>
-    </footer>
+    <nav class="tabs">
+        <a href="index.html" class="tab active">Extensions</a>
+        <a href="apps.html" class="tab">Apps</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Select a tab to access Extensions or Apps.</p>
+    </div>
 </body>
 </html>
